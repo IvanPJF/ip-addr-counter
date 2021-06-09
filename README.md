@@ -3,7 +3,7 @@
 ### Deployment
 
 + Скопировать проект из GitHub:
-    > Пример: `git clone git@github.com:IvanPJF/ip-addr-counter.git`
+    > Пример: `git clone https://github.com/IvanPJF/ip-addr-counter.git`
 + Переместиться в корневой каталог проекта
 + Выполнить команду:
     >`mvn clean package`
