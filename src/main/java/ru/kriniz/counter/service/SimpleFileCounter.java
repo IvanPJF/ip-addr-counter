@@ -20,7 +20,8 @@ public class SimpleFileCounter extends AbstractCounter {
 
     @Override
     public void count() throws Exception {
-        Files.lines(Path.of(this.fileName))
-                .forEach(this.store::addIP);
+        try (var stream = Files.lines(Path.of(this.fileName))) {
+            stream.forEach(this.store::addIP);
+        }
     }
 }
